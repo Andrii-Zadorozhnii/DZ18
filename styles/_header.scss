@@ -1,0 +1,48 @@
+@use "var";
+@use "preparedCode";
+
+.header{
+    @extend %displayFlexCenter;
+    width: 100vw;
+    padding: 41px 135px;
+    justify-content: start;
+
+    &-logo{
+        margin-right: 29.722%;
+    }
+
+    &-menu__items{
+        max-width: 500px;
+        width: 100%;
+        @extend %displayFlexCenter;
+        gap: 42px;
+
+        & li:hover{
+            border-bottom: 1px solid;
+            border-color: inherit
+        }
+    }
+}
+
+
+.searc-btn{
+    @extend %displayFlexCenter;
+    gap: 5px;
+}
+
+.search-willHide{
+    width: 0px;
+
+    margin-left: 5px;
+}
+
+.search-visibleButton{
+    border: 0px;
+    background: white;
+}
+
+.search-visibleButton:hover + .search-willHide{
+    opacity: 0;
+    width: 500px;
+}
+

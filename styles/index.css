@@ -123,36 +123,98 @@ input[type=phone] {
 }
 @font-face {
   font-family: "RedHat600";
-  src: url("../fonts/RedHatDisplay-SemiBold.woff2") format("woff2"), url("RedHatDisplay-SemiBold.woff") format("woff");
+  src: url("../fonts/RedHatDisplay-SemiBold.woff2") format("woff2"), url("../fonts/RedHatDisplay-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "RobotoNormal";
-  src: url("Roboto-Regular.woff2") format("woff2"), url("Roboto-Regular.woff") format("woff");
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "RedHatNormal";
-  src: url("RedHatDisplay-Regular.woff2") format("woff2"), url("RedHatDisplay-Regular.woff") format("woff");
+  src: url("../fonts/RedHatDisplay-Regular.woff2") format("woff2"), url("../fonts/RedHatDisplay-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "RedHatBold";
-  src: url("RedHatDisplay-Bold.woff2") format("woff2"), url("RedHatDisplay-Bold.woff") format("woff");
+  src: url("../fonts/RedHatDisplay-Bold.woff2") format("woff2"), url("../fonts/RedHatDisplay-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "LatoBold";
-  src: url("Lato-Bold.woff2") format("woff2"), url("Lato-Bold.woff") format("woff");
+  src: url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
+}
+.header, .header-menu__items, .searc-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  width: 100vw;
+  padding: 41px 135px;
+  justify-content: start;
+}
+.header-logo {
+  margin-right: 29.722%;
+}
+.header-menu__items {
+  max-width: 500px;
+  width: 100%;
+  gap: 42px;
+}
+.header-menu__items li:hover {
+  border-bottom: 1px solid;
+  border-color: inherit;
+}
+
+.searc-btn {
+  gap: 5px;
+}
+
+.search-willHide {
+  width: 0px;
+  margin-left: 5px;
+}
+
+.search-visibleButton {
+  border: 0px;
+  background: white;
+}
+
+.search-visibleButton:hover + .search-willHide {
+  opacity: 0;
+  width: 500px;
+}
+
+.header, .header-menu__items, .searc-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-screen {
+  position: relative;
+}
+.first-screen__image {
+  width: 100vw;
+  z-index: 0;
+}
+.first-screen__title {
+  position: absolute;
+  top: 100px;
+  left: 135px;
+  z-index: 1;
 }/*# sourceMappingURL=index.css.map */
