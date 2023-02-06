@@ -4,13 +4,15 @@
 
 
     .header{
-        @extend %displayFlexCenter;
-        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
         padding: 41px 135px;
         justify-content: start;
-    
+        
         &-logo{
-            margin-right: 29.722%;
+            width: 145px;
+            align-self: start;
+            margin-right: 29%;
         }
     
         &-menu__items{
@@ -19,6 +21,7 @@
             @extend %displayFlexCenter;
             gap: 42px;
             font: var.$headerMenuText;
+            align-self: center;
     
             & li:hover{
                 border-bottom: 1px solid;
@@ -31,6 +34,7 @@
     .searc-btn{
         @extend %displayFlexCenter;
         gap: 5px;
+        align-items: end;
     }
 
     .first-screen__title{
@@ -38,24 +42,19 @@
         max-width: 770px;
         width: 100%;
     }
-    
-    .search-willHide{
-        width: 0px;
-    
-        margin-left: 5px;
-    }
-    
-    .search-visibleButton{
-        border: 0px;
-        background: white;
-    }
-    
-    .search-visibleButton:hover + .search-willHide{
-        opacity: 0;
-        width: 500px;
-    }
-    
+
     .main_content__header-text{
         margin-bottom: var.$marginTitleBottom;
     }
+    
+    .search-willHide{
+        width: 0px;
+        margin-left: 5px;
 
+    }
+    
+    .search-visibleButton{
+
+        background: white;
+
+    }

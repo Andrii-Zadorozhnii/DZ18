@@ -10,6 +10,7 @@ footer{
 .footer{
     @extend %displayFlexCenter;
     justify-content: space-between;
+    margin-bottom: 23px;
 
     &-leftside{
         justify-content: start;
@@ -17,10 +18,16 @@ footer{
 
     &-header{
         margin-bottom: 30px;
+        font: var.$headerText400;
     }
 
     &-phone{
         margin-bottom: 15px;
+        font: var.$fontMainText;
+    }
+
+    &-email{
+        font: var.$fontMainText;
     }
 
     &-social{
@@ -29,6 +36,8 @@ footer{
 
         &__link{
             @extend %displayFlexCenter;
+            justify-content: center;
+            align-items: center;
             width: 50px;
             height: 50px;
             border: 1px solid var.$loadMoreButton;
@@ -40,14 +49,16 @@ footer{
                 transition: 0.3s all;
             }
         }
-        &__link svg{
+        &__link a svg{
+            position: relative;
+            top: 3px;
             height: 24px;
             width: 24px;
             fill: var.$loadMoreButton;
         }
     }
+    &-copyright{
+        text-align: center;
+    }
 }
 
-.footer-copyright{
-    margin: 0 auto;
-}
