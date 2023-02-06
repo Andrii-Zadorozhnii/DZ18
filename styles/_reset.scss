@@ -1,3 +1,5 @@
+@use 'var';
+
 /* Box sizing rules */
 *,
 *::before,
@@ -14,7 +16,6 @@ h1,
 h2,
 h3,
 h4,
-p,
 figure,
 blockquote,
 dl,
@@ -84,16 +85,16 @@ html:focus-within {
   }
 }
 
-li:hover {
-  cursor: grab;
-}
+
 
 a:link {
-  color: blue;
+  color: var.$additionalTextColor;
+  fill: var.$additionalTextColor;
 }
 
 a:visited {
-  color: blue;
+  color: var.$additionalTextColor;
+  fill: var.$additionalTextColor;
 }
 
 input[type="text"],

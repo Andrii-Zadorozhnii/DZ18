@@ -1,0 +1,72 @@
+@use "var";
+@use "preparedCode";
+
+
+
+
+
+.most-popular{
+
+    &__heading{
+        @extend %displayFlexCenter;
+        justify-content: space-between;
+        margin-bottom: 46px;
+    }
+
+    &__header{
+        font: var.$subTitle;
+    }
+
+    &__button{
+        border: 0px;
+        background-color: #fff;
+        & a:link{
+
+        &::after{
+            content: url(../images/svg/arrow-right2.svg);
+            }
+        }
+    }
+}
+
+.most-popular-post__post-one, .most-popular-post__post-one, .most-popular-post__post-one{
+    max-width: 570px;
+    width: 100%;
+}
+
+
+.most-popular-post{
+    @extend %displayFlexStart;
+    gap: 30px;
+    margin-bottom: 54px;
+}
+
+
+
+.popular-post__img{
+    width: 100%;
+    
+    padding-bottom: var.$marginUnderPicture;
+}
+
+.popular-img__description{
+    @extend %displayFlexCenter;
+    align-items: start;
+        justify-content: space-between;
+        margin-bottom: var.$marginUnderPicture;
+
+        &-text{
+            font:var.$latestPostPictureTitle;
+            color: var.$additionalTextColor;
+        }
+}
+
+.popular-post-title{
+    margin-bottom: var.$marginUnderPicture;
+    font: var.$blogTitle;
+}
+
+.popular-post-information{
+    font: var.$fontMainText;
+    color: var.$loadMoreButton;
+}

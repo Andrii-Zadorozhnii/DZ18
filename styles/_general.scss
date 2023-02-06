@@ -1,0 +1,18 @@
+@use "var";
+@use "preparedCode";
+
+
+cursor{
+    content: url(../images/svg/cursor.svg);
+}
+
+button{
+    @extend %buttonEffect;
+}
+
+
+
+.arrow{
+    max-width: 25px;
+    max-height: 12px;
+}

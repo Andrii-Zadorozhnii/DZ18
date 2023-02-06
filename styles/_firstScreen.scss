@@ -1,10 +1,13 @@
 @use "var";
 @use "preparedCode";
 
-
+.main_content__header-text{
+    font: var.$headerText400;
+}
 
 .first-screen{
     position: relative;
+    margin-bottom: 90px;
 
     &__image{
         width: 100vw;
@@ -16,5 +19,35 @@
         top: 100px;
         left: 135px;
         z-index: 1;
+        max-width: 770px;
+        width: 100%;
+    }
+}
+
+.blog-info{
+    
+    &__submenu{
+        margin-bottom: 30px;
+        font: var.$fontMainText;
+        color: var.$additionalTextColor;
+    }
+
+    &__header{
+        font: var.$blogTitle;
+        max-width: 369px;
+        margin-bottom: 15px;
+    }
+
+    &__date{
+        margin-bottom: 50px;
+        font: var.$fontMainText;
+        color: var.$additionalTextColor;
+    }
+
+    &__description{
+        font: var.$fontMainText;
+        color: var.$loadMoreButton;
+        max-width: 448px;
+        letter-spacing: 0.05em;
     }
 }

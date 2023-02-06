@@ -1,0 +1,73 @@
+@use "var";
+@use "preparedCode";
+
+
+
+.latest-posts{
+    
+    &__heading{
+        @extend %displayFlexCenter;
+        justify-content: space-between;
+        margin-bottom: 46px;
+        
+    }
+
+    &__button{
+        border: 0px;
+        background-color: #fff;
+        & a:link{
+
+
+
+        &::after{
+            content: url(../images/svg/arrow-right2.svg);
+            }
+        }
+    }
+
+    &__header{
+        font: var.$subTitle;
+    }
+
+    &__button{
+        font: var.$fontMainText;
+        color: var.$additionalTextColor;
+    }
+}
+
+.latest-post{
+    @extend %displayFlexStart;
+    align-items: self-start;
+    gap: 30px;
+    margin-bottom: 112px;
+}
+
+
+
+.post-img{
+    height: 260px;
+    width: 100%;
+    padding-bottom: var.$marginUnderPicture;
+
+    &__description{
+        @extend %displayFlexCenter;
+        justify-content: space-between;
+        margin-bottom: var.$marginUnderPicture;
+
+        &-text{
+            font: var.$latestPostPictureTitle;
+            color: var.$additionalTextColor;
+        }
+    }
+}
+
+
+.post-title{
+    font: var.$postTitle;
+    margin-bottom: 20px;
+}
+
+.post-information{
+    font: var.$fontMainText;
+    color: var.$loadMoreButton;
+}

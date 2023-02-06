@@ -1,0 +1,47 @@
+@use "var";
+@use "preparedCode";
+
+.load-more{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 90px;
+
+    &__button{
+        padding: 9.5px 45px;
+        border: 0px;
+        background: var.$loadMoreButton;
+        
+        
+    }
+}
+
+.load-more__button a:link{
+    color: #fff;
+}
+.load-more__button a:visited{
+    color: #fff;
+}
+
+.info{
+    display: flex;
+    gap: 200px;
+    justify-content: space-between;
+    margin-bottom: 90px;
+    align-items: self-start;
+
+    &-text1{
+        font: var.$infoPosition;
+    }
+
+    &-text2{
+        font: var.$infoDescription ;
+        color: var.$loadMoreButton;
+        letter-spacing: 0.05em;
+    }
+
+
+    &-text1, &-text2{
+        width: 470px;
+    }
+
+}

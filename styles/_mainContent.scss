@@ -1,0 +1,23 @@
+@use "var";
+@use "preparedCode";
+
+
+
+.main-content{
+    padding: 0px 135px;
+
+    &__blog-article{
+        @extend %displayFlexCenter;
+        gap: 30px;
+        margin-bottom: var.$marginTitleBottom;
+    }
+}
+
+.main-content__blog-image, .main-content__blog-info{
+    max-width: 570px;
+    width: 100%;
+}
+
+.article-info__description::after{
+    content: url(../images/svg/arrow-right2.svg);
+}

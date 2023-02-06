@@ -2,6 +2,17 @@
 
 %displayFlexCenter{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+}
+
+%displayFlexStart{
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+}
+
+%buttonEffect{
+    transform: scale(1.2);
+    transition: 0.3s all;
 }
