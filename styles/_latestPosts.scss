@@ -110,3 +110,37 @@
         order: 1;
     }    
 }
+
+@media only screen and (max-width: 480px) {
+    .most-popular{
+        max-width: 480px;
+        width: 100%;
+    }
+
+    .latest-posts__heading{
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .latest-post__post-one, .latest-post__post-two, .latest-post__post-three{
+
+        display: block;
+        width: 100%;
+
+        & div{
+            margin: 0 auto;
+            max-width: 300px;
+            width: 100%;
+        }
+    }
+
+    .latest-post__img{
+        height: 250px;
+        height: 100%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+    .post-img__description{
+        margin-bottom: 30px;
+    }
+}

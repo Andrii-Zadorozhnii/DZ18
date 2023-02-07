@@ -8,9 +8,12 @@ footer{
 }
 
 .footer{
-    @extend %displayFlexCenter;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 23px;
+    
 
     &-leftside{
         justify-content: start;
@@ -33,11 +36,13 @@ footer{
     &-social{
         @extend %displayFlexCenter;
         gap: 10px;
+        
 
         &__link{
             @extend %displayFlexCenter;
             justify-content: center;
             align-items: center;
+            
             width: 50px;
             height: 50px;
             border: 1px solid var.$loadMoreButton;
@@ -62,3 +67,53 @@ footer{
     }
 }
 
+@media only screen and (max-width: 930px) {
+    footer{
+        text-align: center;
+    }
+
+    .footer{
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &-email{
+            margin-bottom: 50px;
+        }
+
+        &-copyright{
+            margin-top: 40px;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    footer{
+        padding: 50 15px 50px;
+    }
+
+    .footer{
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+
+        &-phote{
+            font-size: 18px;
+        }
+
+        &-email{
+            font-size: 18px;
+        }
+    }
+
+    .footer-copyright{
+        max-width: 250px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        font: var.$fontMainText;
+        margin-top: 40px;
+    }
+    
+}

@@ -68,6 +68,9 @@
         margin-bottom: var.$marginTitleBottom;
     }
 // ////////////////////////////////////////////////
+
+
+
 @media only screen and (max-width: 930px) {
 
     .header{
@@ -133,4 +136,12 @@
         margin-bottom: var.$marginTitleBottom;
     }
 
+}
+
+@media only screen and (max-width: 480px) {
+
+    .header{
+        padding: 23.5px 15px;
+    
+    }
 }

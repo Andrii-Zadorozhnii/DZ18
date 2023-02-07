@@ -7,6 +7,8 @@
 
 .most-popular{
 
+    margin-bottom: 65px;
+
     &__heading{
         @extend %displayFlexCenter;
         justify-content: space-between;
@@ -72,6 +74,10 @@
 }
 
 @media only screen and (max-width: 930px) {
+
+    .most-popular{
+        margin-bottom: 65px;
+    }
     
     .most-popular-post{
     display: flex;
@@ -79,9 +85,32 @@
     justify-content: space-between;
     }
 
-.most-popular-post__post-one, .most-popular-post__post-two{
-    max-width: 570px;
-    width: 100%;
+    .most-popular-post__post-one, .most-popular-post__post-two{
+        max-width: 570px;
+        width: 100%;
+        }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .most-popular-post{
+        display: block;
+        max-width: 480px;
+        width: 100%;
+        align-items: center;
+
+
+        &__post-one{
+            margin: 0 auto;
+        }
     }
+    .most-popular__heading, .most-popular-post__post, .popular-img__description, .most-popular-post__post-one div, .most-popular-post__post-two div {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+
 
 }

@@ -31,23 +31,28 @@
     </header>
     <!-- /////////////////////////////////// -->
     <section class="first-screen">
-      <source
-        srcset="./images/tablet/bgImageTablet.jpg"
-        media="(max-width: 930px)"
-      />
-      <source
-        srcset="./images/mobile/blogImageImage.jpg"
-        media="(max-width: 700px)"
-      />
+      <div class="first-screen__img">
+        <picture>
+          <source
+        srcset="./images/mobile/bgImageMobile.jpg"
+        media="(max-width: 480px)"
+        />
+        <source
+          media="(max-width: 930px)"
+          srcset="./images/tablet/bgImageTablet.jpg"
+        />
+      
       <img
         class="first-screen__image"
         src="./images/desctop/bgImageDesctop.jpg"
         alt="bg-image"
       />
-
+    </picture>
+      
       <h1 class="first-screen__title">
         Manifest is a newborn theme. Clean, simple and fast.
       </h1>
+    </div>
     </section>
     <!-- /////////////////////////////////// -->
     <section class="main-content">
@@ -57,15 +62,17 @@
       <article class="main-content__blog">
         <section class="main-content__blog-article">
           <section class="main-content__blog-image">
-            <source
-              srcset="./images/tablet/imageArrowTablet.jpg"
-              media="(max-width: 930px)"
-            />
-            <source
+            <picture>
+              <source
               srcset="./images/mobile/imageArrowMobile.jpg"
-              media="(max-width: 700px)"
-            />
-            <img src="./images/desctop/imageArrowDesctop.jpg" alt="imgage" />
+              media="(max-width: 480px)"
+              />
+              <source
+                media="(max-width: 930px)"
+                srcset="./images/tablet/imageArrowTablet.jpg"
+              />
+                  <img src="./images/desctop/imageArrowDesctop.jpg" alt="image" />
+            </picture>
           </section>
           <section class="main-content__blog-info section-one">
             <h4 class="blog-info__submenu">Technology, Interface Design</h4>
@@ -104,15 +111,17 @@
             </p>
           </section>
           <section class="main-content__blog-image">
-            <source
-              srcset="./images/tablet/blogImageTablet.jpg"
-              media="(max-width: 930px)"
-            />
-            <source
+            <picture>
+              <source
               srcset="./images/mobile/blogImageImage.jpg"
-              media="(max-width: 700px)"
-            />
-            <img src="./images/desctop/blogImageDesctop.jpg" alt="imgage" />
+              media="(max-width: 480px)"
+              />
+              <source
+                media="(max-width: 930px)"
+                srcset="./images/tablet/blogImageTablet.jpg"
+              />
+                  <img src="./images/desctop/blogImageDesctop.jpg" alt="image" />
+            </picture>
           </section>
         </section>
         <!-- ///////////////////////////////////// -->
@@ -126,22 +135,20 @@
 
 
           <!--  posts -->
-          <ul class="latest-post">
+          <ul class="latest-post ">
             <li class="latest-post__post-one">
               <div>
-              <source
-              srcset="./images/tablet/portOneTablet.jpg"
-              media="(max-width: 930px)"
-            />
-            <source
-              srcset="./images/mobile/postOneMobile.jpg"
-              media="(max-width: 700px)"
-            />
-              <img
-                class="post-img"
-                src="./images/desctop/postOneDesctop.jpg"
-                alt="img"
-              />
+                <picture>
+                  <source
+                  srcset="./images/mobile/postOneMobile.jpg"
+                  media="(max-width: 480px)"
+                  />
+                  <source
+                    media="(max-width: 930px)"
+                    srcset="./images/tablet/portOneTablet.jpg"
+                  />
+                      <img class="latest-post__img" src="./images/desctop/postOneDesctop.jpg" alt="image" />
+                </picture>
               </div>
               <div>
               <div class="post-img__description">
@@ -158,19 +165,17 @@
             <li class="latest-posts__post-two">
               <li class="latest-post__post-one">
                 <div class="pos-two__image">
-                <source
-                srcset="./images/tablet/portTwoTablet.jpg"
-                media="(max-width: 930px)"
-              />
-              <source
-                srcset="./images/mobile/postTwoMobile.jpg"
-                media="(max-width: 700px)"
-              />
-              <img
-                class="post-img"
-                src="./images/desctop/postTwoDesctop.jpg"
-                alt="img"
-              />
+                  <picture>
+                    <source
+                    srcset="./images/mobile/postTwoMobile.jpg"
+                    media="(max-width: 480px)"
+                    />
+                    <source
+                      media="(max-width: 930px)"
+                      srcset="./images/tablet/portTwoTablet.jpg"
+                    />
+                        <img class="latest-post__img" src="./images/desctop/postTwoDesctop.jpg" alt="image" />
+                  </picture>
               </div>
               <div>
               <div class="post-img__description">
@@ -189,19 +194,17 @@
             <li class="latest-posts__three">
               <li class="latest-post__post-one">
                 <div>
-                <source
-                srcset="./images/tablet/portThreeTablet.jpg"
-                media="(max-width: 930px)"
-              />
-              <source
-                srcset="./images/mobile/postThreeMobile.jpg"
-                media="(max-width: 700px)"
-              />
-              <img
-                class="post-img"
-                src="./images/desctop/postThreeDesctop.jpg"
-                alt="img"
-              />
+                  <picture>
+                    <source
+                    srcset="./images/mobile/postThreeMobile.jpg"
+                    media="(max-width: 480px)"
+                    />
+                    <source
+                      media="(max-width: 930px)"
+                      srcset="./images/tablet/postThreeTablet.jpg"
+                    />
+                        <img class="latest-post__img" src="./images/desctop/postThreeDesctop.jpg" alt="image" />
+                  </picture>
             </div>
             <div>
               <div class="post-img__description">
@@ -230,19 +233,17 @@
           <ul class="most-popular-post">
             <li class="most-popular-post__post-one">
             <div class="most-popular-post__post">
+              <picture>
                 <source
-                srcset="./images/tablet/portFourTablet.jpg"
-                media="(max-width: 930px)"
-              />
-              <source
                 srcset="./images/mobile/postFourMobile.jpg"
-                media="(max-width: 700px)"
-              />
-              <img
-                class="popular-post__img"
-                src="./images/desctop/postFourDesctop.jpg"
-                alt="img"
-              />
+                media="(max-width: 480px)"
+                />
+                <source
+                  media="(max-width: 930px)"
+                  srcset="./images/tablet/portFourTablet.jpg"
+                />
+                    <img src="./images/desctop/postFourDesctop.jpg" alt="image" />
+              </picture>
               </div>
               <div>
               <div class="popular-img__description">
@@ -262,19 +263,17 @@
           </li>
             <li class="most-popular-post__post-two">
               <div class="most-popular-post__post">
-                <source
-                srcset="./images/tablet/postFiveTablet.jpg"
-                media="(max-width: 930px)"
-              />
-              <source
-                srcset="./images/mobile/postFiveMobile.jpg"
-                media="(max-width: 700px)"
-              />
-              <img
-                class="popular-post__img"
-                src="./images/desctop/postFiveDesctop.jpg"
-                alt="img"
-              />
+                <picture>
+                  <source
+                  srcset="./images/mobile/postFiveMobile.jpg"
+                  media="(max-width: 480px)"
+                  />
+                  <source
+                    media="(max-width: 930px)"
+                    srcset="./images/tablet/postFiveTablet.jpg"
+                  />
+                      <img src="./images/desctop/postFiveDesctop.jpg" alt="image" />
+                </picture>
               </div>
               <div>
               <div class="popular-img__description">

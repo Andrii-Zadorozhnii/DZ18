@@ -10,7 +10,7 @@
         padding: 9.5px 45px;
         border: 0px;
         background: var.$loadMoreButton;
-        
+        margin-top: 65px;
         
     }
 }
@@ -41,7 +41,43 @@
 
 
     &-text1, &-text2{
-        width: 470px;
+        width: calc((100% - 200px)/2);
     }
 
+}
+
+@media only screen and (max-width: 930px) {
+    
+    .info{
+        flex-wrap: wrap;
+        margin-bottom: 90px;
+        align-items: self-star;
+        gap: 50px;
+
+        &-text1{
+            width: 100%;
+        }
+    
+        &-text2{
+            width: 100%;
+            text-align: end;
+        }
+    
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .info{
+        display: block;
+        max-width: 480px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .info-text1, .info-text2{
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: start;
+    }
 }
