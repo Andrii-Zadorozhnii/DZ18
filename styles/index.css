@@ -186,6 +186,10 @@ button:hover, a:hover, svg:hover {
   transition: 0.3s all;
 }
 
+html {
+  width: 100%;
+}
+
 cursor {
   cursor: url(../images/svg/cursor.svg);
 }
@@ -396,7 +400,6 @@ button:hover, a:hover, svg:hover {
     left: 34px;
     z-index: 1;
     max-width: 700px;
-    width: 100%;
   }
   .blog-info__submenu {
     margin-bottom: 30px;

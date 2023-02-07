@@ -2,6 +2,10 @@
 @use "preparedCode";
 
 
+html{
+    width: 100%;
+}
+
 cursor{
     cursor: url(../images/svg/cursor.svg);
 }
