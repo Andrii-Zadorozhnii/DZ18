@@ -20,6 +20,9 @@
 
 
         &::after{
+            margin-left: 5px;
+            position: relative;
+            top: 5px;
             content: url(../images/svg/arrow-right2.svg);
             }
         }
@@ -70,4 +73,40 @@
 .post-information{
     font: var.$fontMainText;
     color: var.$loadMoreButton;
+}
+
+@media only screen and (max-width: 700px){
+    .latest-post__post-one, .latest-post__post-two, .latest-post__post-three{
+        width: 100%;
+        display: flex;
+    }
+
+    .latest-post{
+        flex-direction: column;
+    }
+
+    .post-img{
+    height: 260px;
+    width: 100%;
+    margin-bottom: 30px;
+
+    &__description{
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        &-text{
+            font: var.$latestPostPictureTitle;
+            color: var.$additionalTextColor;
+        }
+    }
+
+    .post-img__description{
+        flex: none;
+    }
+
+ 
+
+
+}
+    
 }

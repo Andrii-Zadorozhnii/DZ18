@@ -3,10 +3,10 @@
 
 
 cursor{
-    content: url(../images/svg/cursor.svg);
+    cursor: url(../images/svg/cursor.svg);
 }
 
-button{
+button:hover, a:hover, svg:hover{
     @extend %buttonEffect;
 }
 

@@ -51,3 +51,62 @@
         letter-spacing: 0.05em;
     }
 }
+
+@media only screen and (max-width: 930px) {
+
+
+    .main_content__header-text{
+        font: var.$headerText400;
+    }
+    
+    .first-screen{
+        position: relative;
+        margin-bottom: 70px;
+    
+        &__image{
+            width: 100vw;
+            z-index: 0;
+        }
+    
+        &__title{
+            position: absolute;
+            top: 30px;
+            left: 34px;
+            z-index: 1;
+            max-width: 700px;
+            width: 100%;
+        }
+    }
+
+    
+    
+    .blog-info{
+        
+        &__submenu{
+            margin-bottom: 30px;
+            font: var.$fontMainText;
+            color: var.$additionalTextColor;
+        }
+    
+        &__header{
+            font: var.$blogTitle;
+            max-width: 369px;
+            margin-bottom: 15px;
+        }
+    
+        &__date{
+            margin-bottom: 40px;
+            font: var.$fontMainText;
+            color: var.$additionalTextColor;
+        }
+    
+        &__description{
+            font: var.$fontMainText;
+            color: var.$loadMoreButton;
+            max-width: 340px;
+            letter-spacing: 0.05em;
+        }
+    }
+
+
+}

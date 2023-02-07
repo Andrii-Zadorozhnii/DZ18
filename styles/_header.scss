@@ -3,21 +3,30 @@
 
 
 
-    .header{
+
+
+.header{
         display: flex;
         flex-wrap: wrap;
         padding: 41px 135px;
-        justify-content: start;
+        justify-content: space-between;
         
         &-logo{
             width: 145px;
-            align-self: start;
-            margin-right: 29%;
+            align-self: center;
+        }
+
+        &_menu__item{
+            display: flex;
+            justify-content: start;
+        }
+
+        &_menu-search{
+            width: 0px;
+            opacity: 0;
         }
     
         &-menu__items{
-            max-width: 500px;
-            width: 100%;
             @extend %displayFlexCenter;
             gap: 42px;
             font: var.$headerMenuText;
@@ -25,16 +34,28 @@
     
             & li:hover{
                 border-bottom: 1px solid;
-                border-color: inherit
+                border-color: inherit;
+                transform: scale(1.4);
+                transition: 0.4s all;
             }
+
         }
     }
     
     
     .searc-btn{
         @extend %displayFlexCenter;
-        gap: 5px;
-        align-items: end;
+        width: 20px;
+        height: 20px;
+        border: 0;
+        background-color: inherit;
+
+        & svg{
+            position: relative;
+            left: 5px;
+            top: 2px;
+            fill: var.$headerMenuText;
+        }
     }
 
     .first-screen__title{
@@ -46,15 +67,70 @@
     .main_content__header-text{
         margin-bottom: var.$marginTitleBottom;
     }
-    
-    .search-willHide{
-        width: 0px;
-        margin-left: 5px;
+// ////////////////////////////////////////////////
+@media only screen and (max-width: 930px) {
 
+    .header{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 23px 44px;
+        justify-content: space-between;
+        
+        &-logo{
+            width: 145px;
+            align-self: center;
+        }
+
+        &_menu__item{
+            display: flex;
+            justify-content: start;
+            display: none;
+        }
+
+        &_menu-search{
+            width: 0px;
+            opacity: 0;
+        }
+    
+        &-menu__items{
+            gap: 42px;
+            font: var.$headerMenuText;
+            align-self: center;
+            display: none;
+    
+            & li:hover{
+                border-bottom: 1px solid;
+                border-color: inherit;
+                transform: scale(1.4);
+                transition: 0.4s all;
+            }
+
+        }
     }
     
-    .search-visibleButton{
+    
+    .searc-btn{
+        width: 20px;
+        height: 20px;
+        border: 0;
+        background-color: inherit;
 
-        background: white;
-
+        & svg{
+            position: relative;
+            left: 5px;
+            top: 2px;
+            fill: var.$headerMenuText;
+        }
     }
+
+    .first-screen__title{
+        font: var.$headerText600Tab;
+        max-width: 700px;
+        width: 100%;
+    }
+
+    .main_content__header-text{
+        margin-bottom: var.$marginTitleBottom;
+    }
+
+}

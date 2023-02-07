@@ -10,7 +10,9 @@
   <body>
     <!-- /////////////////////////////////// -->
     <header class="header">
-      <a class="header-logo" href="./index.html"><img src="./images/Logo.png" alt=""  /></a>
+      <a class="header-logo" href="./index.html"
+        ><img src="./images/Logo.png" alt=""
+      /></a>
       <nav class="header-menu">
         <ul class="header-menu__items">
           <li class="header_menu__item"><a href="./index.html">HOME</a></li>
@@ -18,16 +20,31 @@
           <li class="header_menu__item"><a href="./index.html">WORKS</a></li>
           <li class="header_menu__item"><a href="./index.html">BLOG</a></li>
           <li class="header_menu__item"><a href="./index.html">CONTACT</a></li>
+          <li class="header_menu__item">
+            <button class="searc-btn">
+              <svg><use xlink:href="./symbol-defs.svg#icon-search"></use></svg>
+            </button>
+            <input type="search" class="header_menu-search" />
+          </li>
         </ul>
       </nav>
     </header>
     <!-- /////////////////////////////////// -->
     <section class="first-screen">
+      <source
+        srcset="./images/tablet/bgImageTablet.jpg"
+        media="(max-width: 930px)"
+      />
+      <source
+        srcset="./images/mobile/blogImageImage.jpg"
+        media="(max-width: 700px)"
+      />
       <img
         class="first-screen__image"
         src="./images/desctop/bgImageDesctop.jpg"
         alt="bg-image"
       />
+
       <h1 class="first-screen__title">
         Manifest is a newborn theme. Clean, simple and fast.
       </h1>
@@ -40,6 +57,14 @@
       <article class="main-content__blog">
         <section class="main-content__blog-article">
           <section class="main-content__blog-image">
+            <source
+              srcset="./images/tablet/imageArrowTablet.jpg"
+              media="(max-width: 930px)"
+            />
+            <source
+              srcset="./images/mobile/imageArrowMobile.jpg"
+              media="(max-width: 700px)"
+            />
             <img src="./images/desctop/imageArrowDesctop.jpg" alt="imgage" />
           </section>
           <section class="main-content__blog-info section-one">
@@ -50,7 +75,13 @@
             <p class="blog-info__date">6 May, 2020</p>
             <p class="blog-info__description">
               Transformation has to be driven by everybody, not just by climate
-              groups, and we have a responsibility to use our influence to drive this.<a href="./index.html"><svg class="arrow"><use xlink:href="./symbol-defs.svg#icon-arrow-right" ></use></svg></a>
+              groups, and we have a responsibility to use our influence to drive
+              this.<a href="./index.html"
+                ><svg class="arrow">
+                  <use
+                    xlink:href="./symbol-defs.svg#icon-arrow-right"
+                  ></use></svg
+              ></a>
             </p>
           </section>
         </section>
@@ -63,10 +94,24 @@
             <p class="blog-info__date">6 May, 2020</p>
             <p class="blog-info__description">
               Transformation has to be driven by everybody, not just by climate
-              groups, and we have a responsibility to use our influence to drive this.<a href="./index.html"><svg class="arrow"><use xlink:href="./symbol-defs.svg#icon-arrow-right" ></use></svg></a> 
+              groups, and we have a responsibility to use our influence to drive
+              this.<a href="./index.html"
+                ><svg class="arrow">
+                  <use
+                    xlink:href="./symbol-defs.svg#icon-arrow-right"
+                  ></use></svg
+              ></a>
             </p>
           </section>
           <section class="main-content__blog-image">
+            <source
+              srcset="./images/tablet/blogImageTablet.jpg"
+              media="(max-width: 930px)"
+            />
+            <source
+              srcset="./images/mobile/blogImageImage.jpg"
+              media="(max-width: 700px)"
+            />
             <img src="./images/desctop/blogImageDesctop.jpg" alt="imgage" />
           </section>
         </section>
@@ -80,14 +125,22 @@
           </div>
           <ul class="latest-post">
             <li class="latest-post__post-one">
+              <source
+              srcset="./images/tablet/portOneTablet.jpg"
+              media="(max-width: 930px)"
+            />
+            <source
+              srcset="./images/mobile/postOneMobile.jpg"
+              media="(max-width: 700px)"
+            />
               <img
                 class="post-img"
                 src="./images/desctop/postOneDesctop.jpg"
                 alt="img"
               />
               <div class="post-img__description">
-                <p class="post-img__description-text">Interface Design</p>
-                <p class="post-img__description-text">8 June, 2020</p>
+                <p class="post-img__description-text grid2">Interface Design</p>
+                <p class="post-img__description-text grid3">8 June, 2020</p>
               </div>
               <h5 class="post-title">UX traffic light colours</h5>
               <p class="post-information">
@@ -96,6 +149,15 @@
               </p>
             </li>
             <li class="latest-posts__post-two">
+              <li class="latest-post__post-one">
+                <source
+                srcset="./images/tablet/portTwoTablet.jpg"
+                media="(max-width: 930px)"
+              />
+              <source
+                srcset="./images/mobile/postTwoMobile.jpg"
+                media="(max-width: 700px)"
+              />
               <img
                 class="post-img"
                 src="./images/desctop/postTwoDesctop.jpg"
@@ -114,6 +176,15 @@
               </p>
             </li>
             <li class="latest-posts__three">
+              <li class="latest-post__post-one">
+                <source
+                srcset="./images/tablet/portThreeTablet.jpg"
+                media="(max-width: 930px)"
+              />
+              <source
+                srcset="./images/mobile/postThreeMobile.jpg"
+                media="(max-width: 700px)"
+              />
               <img
                 class="post-img"
                 src="./images/desctop/postThreeDesctop.jpg"
@@ -141,6 +212,15 @@
           </div>
           <ul class="most-popular-post">
             <li class="most-popular-post__post-one">
+              <li class="latest-post__post-one">
+                <source
+                srcset="./images/tablet/portFourTablet.jpg"
+                media="(max-width: 930px)"
+              />
+              <source
+                srcset="./images/mobile/postFourMobile.jpg"
+                media="(max-width: 700px)"
+              />
               <img
                 class="popular-post__img"
                 src="./images/desctop/postFourDesctop.jpg"
@@ -161,6 +241,15 @@
               </p>
             </li>
             <li class="most-popular-post__post-one">
+              <li class="latest-post__post-one">
+                <source
+                srcset="./images/tablet/postFiveTablet.jpg"
+                media="(max-width: 930px)"
+              />
+              <source
+                srcset="./images/mobile/postFiveMobile.jpg"
+                media="(max-width: 700px)"
+              />
               <img
                 class="popular-post__img"
                 src="./images/desctop/postFiveDesctop.jpg"
@@ -191,11 +280,15 @@
           </div>
 
           <div class="info-text2">
-            <p>We work with clients around the world from our headquarters in
-            Charleston, South Carolina.</p>
-            <br/>
-            <p>We focus on naming, branding, brand narratives, website design and
-            development, and brand experiences.</p>
+            <p>
+              We work with clients around the world from our headquarters in
+              Charleston, South Carolina.
+            </p>
+            <br />
+            <p>
+              We focus on naming, branding, brand narratives, website design and
+              development, and brand experiences.
+            </p>
           </div>
         </section>
       </article>
@@ -213,25 +306,29 @@
         <li>
           <ul class="footer-social">
             <li class="footer-social__link">
-              <a href="./index.html"><svg>
-                <use xlink:href="./symbol-defs.svg#icon-instagram"></use>
-              </svg></a>
+              <a href="./index.html"
+                ><svg>
+                  <use xlink:href="./symbol-defs.svg#icon-instagram"></use></svg
+              ></a>
             </li>
             <li class="footer-social__link">
-                <a href="./index.html"><svg>
-                    <use xlink:href="./symbol-defs.svg#icon-facebook"></use>
-                  </svg></a>
-              </li>
-              <li class="footer-social__link">
-                <a href="./index.html"><svg>
-                    <use xlink:href="./symbol-defs.svg#icon-twitter"></use>
-                  </svg></a>
-              </li>
-              <li class="footer-social__link">
-                <a href="./index.html"><svg>
-                    <use xlink:href="./symbol-defs.svg#icon-linkedin"></use>
-                  </svg></a>
-              </li>
+              <a href="./index.html"
+                ><svg>
+                  <use xlink:href="./symbol-defs.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="footer-social__link">
+              <a href="./index.html"
+                ><svg>
+                  <use xlink:href="./symbol-defs.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li class="footer-social__link">
+              <a href="./index.html"
+                ><svg>
+                  <use xlink:href="./symbol-defs.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
           </ul>
         </li>
       </ul>
