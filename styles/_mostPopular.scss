@@ -29,29 +29,29 @@
     }
 }
 
-.most-popular-post__post-one, .most-popular-post__post-one, .most-popular-post__post-one{
+
+.most-popular-post{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.most-popular-post__post-one, .most-popular-post__post-two{
     max-width: 570px;
     width: 100%;
 }
 
 
-.most-popular-post{
-    @extend %displayFlexStart;
-    gap: 30px;
-    margin-bottom: 54px;
-}
-
 
 
 .popular-post__img{
     width: 100%;
-    
     padding-bottom: var.$marginUnderPicture;
 }
 
 .popular-img__description{
-    @extend %displayFlexCenter;
-    align-items: start;
+        display: flex;
+        align-items: start;
         justify-content: space-between;
         margin-bottom: var.$marginUnderPicture;
 
@@ -69,4 +69,19 @@
 .popular-post-information{
     font: var.$fontMainText;
     color: var.$loadMoreButton;
+}
+
+@media only screen and (max-width: 930px) {
+    
+    .most-popular-post{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    }
+
+.most-popular-post__post-one, .most-popular-post__post-two{
+    max-width: 570px;
+    width: 100%;
+    }
+
 }
