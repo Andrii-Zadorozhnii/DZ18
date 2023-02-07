@@ -96,31 +96,49 @@
         height: 100%;
         padding: 0;
 
-    &__description{
-        justify-content: space-between;
-        margin-bottom: 30px;
+        &__description{
+            justify-content: space-between;
+            margin-bottom: 30px;
 
-        &-text{
-            font: var.$latestPostPictureTitle;
-            color: var.$additionalTextColor;
+                &-text{
+                    font: var.$latestPostPictureTitle;
+                    color: var.$additionalTextColor;
+                }
         }
     }
-}
     .pos-two__image{
         order: 1;
-    }    
+    } 
+
+    .popular-img__description{
+        margin: 0;
+        justify-content: space-between;
+    }
 }
 
 @media only screen and (max-width: 480px) {
+    
+    .latest-posts{
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    
     .most-popular{
         max-width: 480px;
         width: 100%;
     }
 
     .latest-posts__heading{
-        flex-direction: column;
-        text-align: left;
+        display: block;
+        max-width: 300px;
+        width: 100%;
+        margin: 50px auto;
+        
     }
+
+    
 
     .latest-post__post-one, .latest-post__post-two, .latest-post__post-three{
 
@@ -142,5 +160,9 @@
     }
     .post-img__description{
         margin-bottom: 30px;
+    }
+
+    .post-title{
+        margin-top: 25px;
     }
 }

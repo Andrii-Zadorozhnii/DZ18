@@ -94,14 +94,14 @@
         width: 100%;
         margin: 0 auto;
     }
-    .main-content__blog-image, .main-content__blog-info{
-        max-width: 250px;
-        width: 100%;
-        max-height: 300px;
-        height: 100%;
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 8;
-
-    }
+.main-content .main-content__blog-image, .main-content .main-content__blog-info {
+    max-width: 300px;
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+}
 }

@@ -77,12 +77,10 @@ select {
     scroll-behavior: auto;
   }
   *,
-*::before,
-*::after {
-    -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
@@ -594,14 +592,15 @@ button:hover, a:hover, svg:hover {
     width: 100%;
     margin: 0 auto;
   }
-  .main-content__blog-image, .main-content__blog-info {
-    max-width: 250px;
+  .main-content .main-content__blog-image, .main-content .main-content__blog-info {
+    max-width: 300px;
     width: 100%;
     max-height: 300px;
     height: 100%;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 8;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
   }
 }
 .footer-social__link, .footer-social, .most-popular__heading, .header-menu__items, .searc-btn, .main-content__blog-article, .latest-posts__heading, .post-img__description {
@@ -701,15 +700,26 @@ button:hover, a:hover, svg:hover {
   .pos-two__image {
     order: 1;
   }
+  .popular-img__description {
+    margin: 0;
+    justify-content: space-between;
+  }
 }
 @media only screen and (max-width: 480px) {
+  .latest-posts {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+  }
   .most-popular {
     max-width: 480px;
     width: 100%;
   }
   .latest-posts__heading {
-    flex-direction: column;
-    text-align: left;
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    margin: 50px auto;
   }
   .latest-post__post-one, .latest-post__post-two, .latest-post__post-three {
     display: block;
@@ -728,6 +738,9 @@ button:hover, a:hover, svg:hover {
   }
   .post-img__description {
     margin-bottom: 30px;
+  }
+  .post-title {
+    margin-top: 25px;
   }
 }
 .footer-social__link, .footer-social, .header-menu__items, .searc-btn, .main-content__blog-article, .latest-posts__heading, .post-img__description, .most-popular__heading {
@@ -823,13 +836,30 @@ button:hover, a:hover, svg:hover {
     width: 100%;
     align-items: center;
   }
+  .most-popular-post__post {
+    margin-bottom: 30px;
+  }
   .most-popular-post__post-one {
     margin: 0 auto;
+    margin-bottom: 50px;
   }
   .most-popular__heading, .most-popular-post__post, .popular-img__description, .most-popular-post__post-one div, .most-popular-post__post-two div {
     max-width: 300px;
     width: 100%;
     margin: 0 auto;
+  }
+  .most-popular__heading {
+    margin-bottom: 30px;
+    display: block;
+    width: 100%;
+  }
+  .popular-img__description {
+    margin-top: 21px;
+    margin-bottom: 12px;
+  }
+  .popular-post-title {
+    margin-top: 11px;
+    margin-bottom: 10px;
   }
 }
 .footer-social__link, .footer-social, .header-menu__items, .searc-btn, .main-content__blog-article, .latest-posts__heading, .post-img__description, .most-popular__heading {
