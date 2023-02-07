@@ -48,8 +48,10 @@
 
 
 .post-img{
+    min-height: 260px;
     width: 100%;
-    padding-bottom: var.$marginUnderPicture;
+    margin-bottom: var.$marginUnderPicture;
+    padding: 0;
 
     &__description{
         @extend %displayFlexCenter;
@@ -82,7 +84,6 @@
 
         & div{
             max-width: calc((100% - 20px)/2);
-            text-align: center;
         }
     }
 

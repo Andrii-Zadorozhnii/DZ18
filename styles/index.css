@@ -558,8 +558,10 @@ button:hover, a:hover, svg:hover {
 }
 
 .post-img {
+  min-height: 260px;
   width: 100%;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
+  padding: 0;
 }
 .post-img__description {
   justify-content: space-between;
@@ -587,7 +589,6 @@ button:hover, a:hover, svg:hover {
   }
   .latest-post__post-one div, .latest-post__post-two div, .latest-post__post-three div {
     max-width: calc((100% - 20px) / 2);
-    text-align: center;
   }
   .latest-post {
     flex-direction: column;
