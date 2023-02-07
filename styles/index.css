@@ -581,18 +581,21 @@ button:hover, a:hover, svg:hover {
   color: #565656;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 930px) {
   .latest-post__post-one, .latest-post__post-two, .latest-post__post-three {
     width: 100%;
     display: flex;
+    gap: 20px;
   }
   .latest-post {
     flex-direction: column;
   }
   .post-img {
-    height: 260px;
+    max-height: 240px;
+    max-width: 340px;
+    height: 100%;
     width: 100%;
-    margin-bottom: 30px;
+    padding: 0;
   }
   .post-img__description {
     justify-content: space-between;
@@ -601,9 +604,6 @@ button:hover, a:hover, svg:hover {
   .post-img__description-text {
     font: 12px/19px "LatoNormal", sans-serif;
     color: #7B7B7B;
-  }
-  .post-img .post-img__description {
-    flex: none;
   }
 }
 .footer-social__link, .footer-social, .footer, .header-menu__items, .searc-btn, .main-content__blog-article, .latest-posts__heading, .post-img__description, .most-popular__heading, .popular-img__description {
